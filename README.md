@@ -1,12 +1,44 @@
-# React + Vite
+# React Stopwatch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React stopwatch app that lets users start, stop, and reset a timer. The elapsed time is shown in hours, minutes, seconds, and hundredths of a second.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Start, stop, and reset the stopwatch
+- Displays time in `hh:mm:ss:ms` format
+- Responsive and easy to use
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the app
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
+
+## Project Structure
+
+```
+StopWatch/
+├── public/           # Static assets
+│   └── ...           # (favicon, etc.)
+├── src/              # Source code
+│   ├── assets/       # Images if needed..
+│   ├── App.jsx       # App entry point
+│   ├── Stopwatch.jsx # Stopwatch component logic
+│   ├── index.css     # Styles
+│   └── main.jsx      # React/Vite bootstrap
+├── index.html        # Main HTML file
+├── package.json      # Project metadata and scripts
+└── README.md         # Project documentation
+```
+
+## License
